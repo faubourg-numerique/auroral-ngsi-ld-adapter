@@ -55,6 +55,6 @@ For an event to be triggered, a subscription must first be created in the contex
 
 | Name                      | Value                              | Description                                                                                                 |
 |---------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| entities                  | [{"type": "DeviceMeasurement"}]    | An array containing an object with a `type` key matching the value defined in `CONTEXT_BROKER_ENTITY_TYPE`. |
 | notification.attributes   | ["oid"]                            | An array containing the name of the property defined in `CONTEXT_BROKER_ENTITY_PROPERTY_OID`.               |
 | notification.endpoint.uri | http://localhost:8080/notify/{eid} | Edit the URL to match where the adapter is available. Replace {eid} with the name of the event.             |
-| entities                  | [{"type": "DeviceMeasurement"}]    | An array containing an object with a `type` key matching the value defined in `CONTEXT_BROKER_ENTITY_TYPE`. |
