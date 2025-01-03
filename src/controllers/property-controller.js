@@ -16,11 +16,11 @@ async function getProperty(request, response) {
     };
     const { data: entities } = await defaultContextBroker.get("/ngsi-ld/v1/entities", { params });
 
-    if (!(entities?.[0]?.[pid])) {
+    if (!entities?.[0]?.[pid]) {
         return response.sendStatus(500);
     }
 
-    response.send(String(entities[0][pid]));
+    return response.send(String(entities[0][pid]));
 }
 
 module.exports = { getProperty };
