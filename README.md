@@ -1,5 +1,7 @@
 # Auroral NGSI-LD adapter
 
+Under development, unfinished at the moment.
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en) (tested with 18) + [NPM](https://www.npmjs.com/)
